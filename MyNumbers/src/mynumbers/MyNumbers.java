@@ -6,7 +6,6 @@
 package mynumbers;
 
 import java.util.Scanner;
-import mynumbers.Fibonacci;
 
 /**
  *
@@ -32,11 +31,16 @@ public class MyNumbers {
     
         while(token != true){
 
-                    System.out.println("...");
-
+                    System.out.println("Fib...");
                     x = in.nextInt();
                     System.out.println("____");
                     Fibonacci.Create_until(x);
+                    
+                    System.out.println("Pri...");
+                    x = in.nextInt();
+                    System.out.println("____");
+                    Primenumber.Create_until(x);                    
+                    
                     token = true;
         }
         in.close();
